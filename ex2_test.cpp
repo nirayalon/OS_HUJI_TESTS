@@ -1,11 +1,18 @@
-#ifndef _UTHREADS_CPP
-#include "uthreads.cpp"
-# endif
-
 #include <unistd.h>
 #include <assert.h>
 # include <stdio.h>
 #include <sys/time.h>
+#include <csignal>
+#include <iostream>
+
+#include "uthreads.h" // TODO: If you get an error of "undefined reference to..." try to replace it with #include "uthreads.cpp"
+//#include "uthreads.cpp"
+
+# define FAILURE (-1)
+# define SUCCESS 0
+
+using namespace std;
+
 
 int MAIN_THREAD = 0;
 int QUANTOM = 1000000;
