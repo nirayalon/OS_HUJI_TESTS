@@ -131,6 +131,7 @@ void test_sleep(){
     uthread_spawn(sleep_entrypoint); // tid 1
     uthread_spawn(kill_yourself_entry_point); // tid 2
     send_sigalarm(); //  should jump to 1 and it will send itself to sleep
+    send_sigalarm(); // wait for sleeping time to pass
     send_sigalarm(); // jump back to thread 1 -> it will terminate itself
     assert(uthread_get_tid() == 0);
     printf("Passed Basic Sleep Test!\n");
