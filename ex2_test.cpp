@@ -166,6 +166,7 @@ int main(){
     test_sleep();
     test_block_sleeping_thread();
     test_send_main_thread_to_sleep();
+    cout << "There should be 2 library error messages" << endl;
     uthread_terminate(0);
 }
 
