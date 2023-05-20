@@ -12,7 +12,7 @@ We are both students in the Operating Systems course at the Hebrew University, a
 To use our tests, simply clone this repository to your local machine using the command:
 
 ```
-git clone https://github.com/your-username/os-tests.git
+git clone https://github.com/nirayalon/os-tests.git
 ```
 > 📝 Replace your-username with your GitHub username.
 
